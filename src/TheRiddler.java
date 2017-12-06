@@ -1,23 +1,38 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
-
+import javax.swing.JOptionPane;
 
 public class TheRiddler {
 
 	public static void main(String[] args) {
-
-		// 1. Make a variable to hold the score
-
-		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
-
-		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-
-		// 5. Otherwise, say "wrong" and tell them the answer
-
-		// 6. Add some more riddles
-
-		// 2. Make a pop up to show the score.
+		
+		int score = 0;
+		String one = JOptionPane.showInputDialog("How many days are there in 4 years?");
+		if(one.equals("1461")) {
+			score++;
+			JOptionPane.showMessageDialog(null, "Good job! Score: "+score);
+		} else {
+			JOptionPane.showMessageDialog(null, "lol no. Score: "+score);
+		}
+		String two = JOptionPane.showInputDialog("How many seconds are there in a year?");
+		if(two.equals("12")) {
+			score++;
+			JOptionPane.showMessageDialog(null, "Good job! Score: "+score);
+		} else {
+			JOptionPane.showMessageDialog(null, "lol no. Score: "+score);
+		}
+		String three = JOptionPane.showInputDialog("What has 13 hearts but no other organs?");
+		if(three.equals("a deck of cards")) {
+			score++;
+			JOptionPane.showMessageDialog(null, "Good job! Score: "+score);
+		} else {
+			JOptionPane.showMessageDialog(null, "lol no. Score: "+score);
+		}
+		String four = JOptionPane.showInputDialog("How many months have 28 days?");
+		if(four.equals("12")) {
+			score++;
+			JOptionPane.showMessageDialog(null, "Good job! Final Score: "+score);
+		} else {
+			JOptionPane.showMessageDialog(null, "lol no. Final Score: "+score);
+		}
 		
 	}
 }
